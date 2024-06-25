@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Successful!</h1>
+      <p>{{ text }}</p>
+      <p>If you have any further questions, please contact the administrator</p>
+      <button class="btn btn-primary" onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

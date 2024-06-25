@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Boost SMS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Login Boost SMS</h1>
+      <form method="post" action="/login">
+        <div class="form-group">
+          <label for="number">Boost Number:</label>
+          <input type="text" class="form-control" id="number" name="number" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="alert alert-warning mt-3">
+            {% for message in messages %}
+              <p>{{ message }}</p>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+    </div>
+  </body>
+</html>

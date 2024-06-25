@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Register Boost SMS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Register Boost SMS</h1>
+      <form method="post">
+        <div class="form-group">
+          <label for="phone_number">Enter your mobile number (please add the area code, e.g. +1 (xxx) xxx-xxxx):</label>
+          <input type="text" class="form-control" id="phone_number" name="phone_number" required>
+        </div>
+        <div class="form-group">
+          <label for="reason">Can you tell us why you chose boost:</label>
+          <textarea class="form-control" id="reason" name="reason" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="password">Set login password:</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
